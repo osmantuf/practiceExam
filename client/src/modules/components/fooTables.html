@@ -1,0 +1,22 @@
+<template>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Foo</th>
+                            <th scope="col">Woo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr repeat.for="foo of foos.foosArray">
+                            <td>${foo.foo}</td>
+                            <td>${foo.woo}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</template>

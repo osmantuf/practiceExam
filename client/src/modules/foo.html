@@ -1,0 +1,6 @@
+<template>
+    <h1>${message}</h1>
+    <button click.trigger="newFoo()">New Foo</button>
+    <compose show.bind="!showFooEditForm" view="./components/fooTables.html"></compose>
+    <compose show.bind="showFooEditForm" view="./components/editFoo.html"></compose>
+</template>
